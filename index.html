@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>TARIFLY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-container">
+
+  <!-- ================= ОБЩАЯ ШАПКА ================= -->
+  <header class="topbar">
+    <div class="topbar-title">TARIFLY</div>
+    <button class="topbar-chat" aria-label="Поддержка" data-support-trigger>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    </button>
+  </header>
+
+  <!-- ================= СТРАНИЦЫ (SPA) ================= -->
+
+  <!-- ---------- ГЛАВНАЯ ---------- -->
+  <section class="page active" id="page-home">
+
+    <section class="hero">
+      <img src="icons/logo.png" alt="SIM Card">
+    </section>
+
+    <section class="grid-container">
+      <a class="card card-blue" href="#tarify">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></div>
+        <div class="card-content">
+          <div class="card-title">Тарифы на свой номер</div>
+          <div class="card-desc">Подключите выгодный тариф</div>
+        </div>
+        <div class="card-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+      </a>
+
+      <a class="card card-green" href="#newnumbers">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.8"/><rect x="8.5" y="7" width="3" height="3" rx="0.7" fill="currentColor" stroke="none"/><rect x="12.5" y="7" width="3" height="3" rx="0.7" fill="currentColor" stroke="none"/><rect x="8.5" y="11" width="3" height="3" rx="0.7" fill="currentColor" stroke="none"/><rect x="12.5" y="11" width="3" height="3" rx="0.7" fill="currentColor" stroke="none"/><line x1="10.5" y1="18" x2="13.5" y2="18"/></svg></div>
+        <div class="card-content">
+          <div class="card-title">Новые номера</div>
+          <div class="card-desc">С выгодными тарифами</div>
+        </div>
+        <div class="card-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+      </a>
+
+      <a class="card card-purple" href="#nomera">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2.8 L20.5 9.2 L12 21.2 L3.5 9.2 Z" fill="currentColor" opacity=".18"/><path d="M12 2.8 L20.5 9.2 L12 21.2 L3.5 9.2 Z"/><path d="M3.5 9.2 H20.5"/><path d="M7.2 9.2 L12 21.2 L16.8 9.2"/><path d="M12 2.8 L7.2 9.2 L16.8 9.2 Z"/></svg></div>
+        <div class="card-content">
+          <div class="card-title">Красивые номера</div>
+          <div class="card-desc">Для вас и бизнеса</div>
+        </div>
+        <div class="card-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+      </a>
+
+      <a class="card card-orange" href="#info">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9.2" fill="currentColor" opacity=".16"/><circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="8.3" r="1.15" fill="currentColor"/><path d="M12 11.2v5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></div>
+        <div class="card-content">
+          <div class="card-title">Полезная информация</div>
+          <div class="card-desc">Новости и акции</div>
+        </div>
+        <div class="card-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+      </a>
+      <a class="card card-indigo" href="#zayavki">
+        <div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <div class="card-content">
+          <div class="card-title">Мои заявки</div>
+          <div class="card-desc">Статус и история заявок</div>
+        </div>
+        <div class="card-arrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg></div>
+      </a>
+
+    </section>
+
+    <div class="section-header">
+      <div class="section-title">Популярные операторы</div>
+      <a href="#nomera" class="section-link">Все &rarr;</a>
+    </div>
+
+    <section class="operators-grid" id="operatorsGrid"></section>
+
+    <section class="promo-banner">
+      <div class="promo-content">
+        <div class="promo-title" id="promoTitle"></div>
+        <div class="promo-desc" id="promoDesc"></div>
+        <a class="promo-btn" href="#newnumbers">Перейти к номерам
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="promo-visual">
+        <div class="promo-chip" id="promoNum1">
+          <svg class="promo-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span class="promo-chip-text"></span>
+        </div>
+        <div class="promo-chip" id="promoNum2">
+          <svg class="promo-chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span class="promo-chip-text"></span>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ---------- ТАРИФЫ ---------- -->
+  <section class="page" id="page-tarify">
+
+    <div class="tarify-mesh-banner">
+      <div class="tarify-mesh-banner-content">
+        <span class="tarify-mesh-tag">
+          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Эксклюзив
+        </span>
+        <div class="tarify-mesh-banner-title">Тарифы <span>на свой номер</span></div>
+        <div class="tarify-mesh-banner-desc">Лучшие условия от ведущих операторов России</div>
+      </div>
+    </div>
+
+    <section class="filter-row" id="filterRow">
+      <button class="filter-chip active" data-op="all"><span class="dot"></span>Все</button>
+      <button class="filter-chip" data-op="mts"><span class="dot"></span>МТС</button>
+      <button class="filter-chip" data-op="mfn"><span class="dot"></span>МегаФон</button>
+      <button class="filter-chip" data-op="bee"><span class="dot"></span>Билайн</button>
+      <button class="filter-chip" data-op="yota"><span class="dot"></span>Yota</button>
+      <button class="filter-chip" data-op="tele2"><span class="dot"></span>Теле2</button>
+    </section>
+
+    <section class="tariff-grid" id="tariffGrid"></section>
+  </section>
+
+  <!-- ---------- НОВЫЕ НОМЕРА С ТАРИФАМИ ---------- -->
+  <section class="page" id="page-newnumbers">
+
+    <div class="tarify-mesh-banner">
+      <div class="tarify-mesh-banner-content">
+        <span class="tarify-mesh-tag">
+          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          Готовые решения
+        </span>
+        <div class="tarify-mesh-banner-title">Новые номера <span>с тарифами</span></div>
+        <div class="tarify-mesh-banner-desc">Номер и тариф в одном пакете — подключайте сразу</div>
+      </div>
+    </div>
+
+    <section class="filter-row" id="newNumbersFilter">
+      <button class="filter-chip active" data-op="all"><span class="dot"></span>Все</button>
+      <button class="filter-chip" data-op="mts"><span class="dot"></span>МТС</button>
+      <button class="filter-chip" data-op="mfn"><span class="dot"></span>МегаФон</button>
+      <button class="filter-chip" data-op="bee"><span class="dot"></span>Билайн</button>
+      <button class="filter-chip" data-op="yota"><span class="dot"></span>Yota</button>
+      <button class="filter-chip" data-op="tele2"><span class="dot"></span>Теле2</button>
+    </section>
+
+    <section class="bundle-list" id="newNumbersList"></section>
+  </section>
+
+  <!-- ---------- НОМЕРА ---------- -->
+  <section class="page" id="page-nomera">
+
+    <section class="numbers-mesh-hero">
+      <div class="numbers-mesh-content">
+        <span class="numbers-mesh-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Премиум
+        </span>
+        <div class="numbers-mesh-title">Красивые <span>номера</span></div>
+        <div class="numbers-mesh-desc">Запоминающиеся номера для вашего стиля и статуса</div>
+      </div>
+    </section>
+
+    <section class="filter-row" id="numFilter">
+      <button class="filter-chip active" data-op="all"><span class="dot"></span>Все</button>
+      <button class="filter-chip" data-op="mts"><span class="dot"></span>МТС</button>
+      <button class="filter-chip" data-op="mfn"><span class="dot"></span>МегаФон</button>
+      <button class="filter-chip" data-op="bee"><span class="dot"></span>Билайн</button>
+      <button class="filter-chip" data-op="yota"><span class="dot"></span>Yota</button>
+      <button class="filter-chip" data-op="tele2"><span class="dot"></span>Теле2</button>
+    </section>
+
+    <section class="numbers-list" id="numbersList"></section>
+
+    <a class="numbers-cta" href="#">
+      <div class="icon-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.9.6 2.8a2 2 0 0 1-.5 2.1L7.9 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.8.6a2 2 0 0 1 1.9 2.2z"/></svg>
+      </div>
+      <div class="text">
+        <h4>НЕ НАШЛИ НУЖНЫЙ НОМЕР?</h4>
+        <p>Оставьте заявку — мы подберём идеальный вариант!</p>
+      </div>
+      <div class="go-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </div>
+    </a>
+  </section>
+
+  <!-- ---------- ЗАЯВКИ ---------- -->
+  <section class="page" id="page-zayavki">
+
+    <section class="zayavki-mesh-hero">
+      <div class="zayavki-mesh-content">
+        <span class="zayavki-mesh-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
+          Ваши заявки
+        </span>
+        <div class="zayavki-mesh-title">Мои <span>заявки</span></div>
+        <div class="zayavki-mesh-desc">Здесь отображаются все ваши заявки на тарифы, номера и услуги</div>
+      </div>
+    </section>
+
+    <div class="zayavki-tabs" id="zayavkiTabs">
+      <button class="zayavki-tab active" data-filter="all">Все</button>
+      <button class="zayavki-tab" data-filter="tariff">Тарифы</button>
+      <button class="zayavki-tab" data-filter="number">Номера</button>
+      <button class="zayavki-tab" data-filter="process">В обработке</button>
+      <button class="zayavki-tab" data-filter="done">Завершено</button>
+    </div>
+
+    <section class="zayavki-list" id="zayavkiList"></section>
+
+    <div class="help-banner">
+      <div class="h-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      </div>
+      <div class="h-text">
+        <h4>Нужна помощь?</h4>
+        <p>Наши менеджеры всегда на связи.</p>
+      </div>
+      <a class="write-btn" href="#" data-support-trigger>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Написать
+      </a>
+    </div>
+  </section>
+
+  <!-- ---------- ИНФО ---------- -->
+  <section class="page" id="page-info">
+
+    <section class="info-mesh-hero">
+      <div class="info-mesh-content">
+        <span class="info-mesh-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Информация
+        </span>
+        <div class="info-mesh-title">Актуальная <span>информация</span></div>
+        <div class="info-mesh-desc">Всё самое важное — в одном месте</div>
+      </div>
+    </section>
+
+    <div class="info-tabs" id="infoTabs">
+      <button class="info-tab active" data-tab="all">Все</button>
+      <button class="info-tab" data-tab="news">Новости</button>
+      <button class="info-tab" data-tab="useful">Полезное</button>
+      <button class="info-tab" data-tab="promo">Акции</button>
+    </div>
+
+    <section class="info-featured">
+      <span class="badge">ВАЖНО</span>
+      <h2>Изменения в тарифах с 1 октября 2025 года</h2>
+      <p>У некоторых операторов изменились условия по тарифам. Подробности уточняйте у менеджеров.</p>
+      <a class="feat-cta" href="#">Подробнее →</a>
+      <svg class="sim-float" viewBox="0 0 80 100" fill="none"><rect x="10" y="6" width="60" height="88" rx="10" fill="#f1f5f9" stroke="#94a3b8"/><rect x="10" y="6" width="60" height="18" rx="10" fill="#fff"/><rect x="10" y="6" width="20" height="18" fill="#e30613"/><rect x="10" y="6" width="20" height="6" fill="#fff"/><rect x="10" y="18" width="20" height="6" fill="#0039a6"/><rect x="24" y="36" width="32" height="22" rx="4" fill="#e7c26a"/></svg>
+    </section>
+
+    <div class="section-label"><h2>НОВОСТИ</h2><a href="#">Смотреть все →</a></div>
+
+    <section class="news-list" id="newsList"></section>
+
+    <div class="section-label"><h2>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h2><a href="#">Смотреть все →</a></div>
+
+    <section class="useful-list">
+      <a class="useful-card" href="#">
+        <div class="u-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="u-text"><h4>Как не попасть на мошенников?</h4><p>Простые правила, которые сохранят ваши данные.</p></div>
+        <span class="go"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#14161c" stroke-width="2.4"><polyline points="9 6 15 12 9 18"/></svg></span>
+      </a>
+    </section>
+  </section>
+
+</div>
+
+<!-- ================= НИЖНЕЕ МЕНЮ ================= -->
+<nav class="bottom-nav" id="bottomNav">
+  <div class="nav-indicator" id="navIndicator"></div>
+
+  <a class="nav-item active" data-page="home" href="#home">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5l9-7 9 7v10.5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 21.5 9 12 15 12 15 21.5"/></svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor"><path d="M11.47 3.84a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 1-1.06 1.06L12 5.43l-8.16 8.16a.75.75 0 1 1-1.06-1.06l8.69-8.69Z"/><path d="M12 5.43l8.16 8.16.09.09v6.19a1.875 1.875 0 0 1-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.19c.03-.03.06-.06.09-.09L12 5.43Z"/></svg>
+    </span>
+    <span class="nav-label">Главная</span>
+  </a>
+
+  <a class="nav-item" data-page="tarify" href="#tarify">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2.2"/><rect x="13" y="3" width="8" height="8" rx="2.2"/><rect x="3" y="13" width="8" height="8" rx="2.2"/><rect x="13" y="13" width="8" height="8" rx="2.2"/></svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="8" height="8" rx="2.2"/><rect x="13" y="3" width="8" height="8" rx="2.2"/><rect x="3" y="13" width="8" height="8" rx="2.2"/><rect x="13" y="13" width="8" height="8" rx="2.2"/></svg>
+    </span>
+    <span class="nav-label">Тарифы</span>
+  </a>
+
+  <a class="nav-item" data-page="newnumbers" href="#newnumbers">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="2.5" width="12" height="19" rx="2.8"/>
+        <rect x="8.5" y="7" width="3" height="3" rx="0.7"/>
+        <rect x="12.5" y="7" width="3" height="3" rx="0.7"/>
+        <rect x="8.5" y="11" width="3" height="3" rx="0.7"/>
+        <rect x="12.5" y="11" width="3" height="3" rx="0.7"/>
+        <line x1="10.5" y1="18" x2="13.5" y2="18"/>
+      </svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor">
+        <rect x="6" y="2.5" width="12" height="19" rx="2.8"/>
+        <rect x="8.5" y="7" width="3" height="3" rx="0.7" fill="#fff"/>
+        <rect x="12.5" y="7" width="3" height="3" rx="0.7" fill="#fff"/>
+        <rect x="8.5" y="11" width="3" height="3" rx="0.7" fill="#fff"/>
+        <rect x="12.5" y="11" width="3" height="3" rx="0.7" fill="#fff"/>
+      </svg>
+    </span>
+    <span class="nav-label">Новые</span>
+  </a>
+
+  <a class="nav-item" data-page="nomera" href="#nomera">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.97.35 1.92.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.33 1.84.56 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C6.744 22.5 1.5 17.256 1.5 10.75V4.5Z"/></svg>
+    </span>
+    <span class="nav-label">Номера</span>
+  </a>
+
+  <a class="nav-item" data-page="zayavki" href="#zayavki">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875A1.875 1.875 0 0 1 12.75 7.125V5.25A3.75 3.75 0 0 0 9 1.5H5.625ZM7.5 15a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Zm0 3a.75.75 0 0 0 0 1.5h9a.75.75 0 0 0 0-1.5h-9Z"/><path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5c1.31 0 2.512.468 3.445 1.245a9.768 9.768 0 0 0-6.974-6.929Z"/></svg>
+    </span>
+    <span class="nav-label">Заявки</span>
+  </a>
+
+  <a class="nav-item" data-page="info" href="#info">
+    <span class="nav-icon-wrap">
+      <svg class="icon-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="7.8" r="1" fill="currentColor" stroke="none"/><path d="M12 11.2v5"/></svg>
+      <svg class="icon-filled" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 10.5a.75.75 0 0 0-.75.75v4.5a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75Zm0-3a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"/></svg>
+    </span>
+    <span class="nav-label">Инфо</span>
+  </a>
+</nav>
+
+
+<!-- ================= ПАНЕЛЬ ОПЕРАТОРА ================= -->
+<div class="op-sheet-overlay" id="opSheetOverlay" aria-hidden="true">
+  <div class="op-sheet" role="dialog" aria-label="Тарифы оператора" id="opSheet">
+    <div class="op-sheet-handle"></div>
+    <button class="op-sheet-close" id="opSheetClose" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+    <div class="op-sheet-head" id="opSheetHead"></div>
+    <div class="op-sheet-tabs" id="opSheetTabs">
+      <button type="button" class="op-sheet-tab active" data-tab="tariffs">Тарифы</button>
+      <button type="button" class="op-sheet-tab" data-tab="newnumbers">Новые</button>
+      <button type="button" class="op-sheet-tab" data-tab="numbers">Номера</button>
+    </div>
+    <div class="op-sheet-list" id="opSheetList"></div>
+  </div>
+</div>
+
+<!-- ================= ВИДЖЕТ ПОДДЕРЖКИ ================= -->
+<div class="support-overlay" id="supportOverlay" aria-hidden="true">
+  <div class="support-widget" role="dialog" aria-label="Нужна помощь?">
+    <button class="support-close" id="supportClose" aria-label="Закрыть">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+    <div class="support-head">
+      <div class="support-avatar">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 13.5v-1.5a8 8 0 0 1 16 0v1.5"/>
+          <path d="M20 13.5v3.7a2.3 2.3 0 0 1-2.3 2.3h-1.2"/>
+          <rect x="2.6" y="13" width="4" height="6.2" rx="1.6"/>
+          <rect x="17.4" y="13" width="4" height="6.2" rx="1.6"/>
+        </svg>
+        <span class="support-online-dot"></span>
+      </div>
+      <div class="support-headtext">
+        <h4>Нужна помощь?</h4>
+        <p>Менеджер ответит за 2 минуты</p>
+      </div>
+    </div>
+    <div class="support-actions">
+      <a class="support-btn support-btn-tg" id="supportTg" href="https://t.me/tarifly_support" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        Telegram
+      </a>
+      <a class="support-btn support-btn-wa" id="supportWa" href="https://wa.me/70000000000" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
